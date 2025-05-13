@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>초롱이 이야기</title>
+</head>
+<body>
+    <h1>초롱이</h1>
+    <img src="Chorong image.jpeg" alt="강아지 사진" width="220" height="250">
+    <div>
+        <button onclick="toggleText()">초롱이 구조 전</button>
+
+  <!-- 접혔다 펼쳐질 글 -->
+  <div id="text-box" class="toggle-content">
+    <p>초롱이는 구조되기 전, 길거리에서 혼자 지내며 많은 어려움을 겪었어요. 🥲</p>
+  </div>
+
+  <!-- 자바스크립트 기능 -->
+  <script>
+    function toggleText() {
+      const content = document.getElementById('text-box');
+      content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+    }
+  </script>
+
+    </div>
+    <div>
+        <button onclick="toggleText()">초롱이 구조 후</button>
+
+  <!-- 접혔다 펼쳐질 글 -->
+  <div id="text-box" class="toggle-content">
+    <p>초롱이는 구조되기 전, 길거리에서 혼자 지내며 많은 어려움을 겪었어요. 🥲</p>
+    </div>
+    <div>
+        <button onclick="toggleText()">다른 아이들도 보기</button>
+
+  <!-- 접혔다 펼쳐질 글 -->
+  <div id="text-box" class="toggle-content">
+    <p>초롱이는 구조되기 전, 길거리에서 혼자 지내며 많은 어려움을 겪었어요. 🥲</p>
+    </div>
+    <div>
+        <button onclick="toggleText()">영종 더 소중 레스큐</button>
+
+  <!-- 접혔다 펼쳐질 글 -->
+  <div id="text-box" class="toggle-content">
+    <p>초롱이는 구조되기 전, 길거리에서 혼자 지내며 많은 어려움을 겪었어요. 🥲</p>
+    </div>
+    <div>
+        <button onclick="toggleText()">굿즈</button>
+
+  <!-- 접혔다 펼쳐질 글 -->
+  <div id="text-box" class="toggle-content">
+    <p>초롱이는 구조되기 전, 길거리에서 혼자 지내며 많은 어려움을 겪었어요. 🥲</p>
+    </div>
+</body>
+</html>
