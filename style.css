@@ -31,3 +31,15 @@ img {
     display: block;
     margin: 0 auto;
 }
+/* 초롱이 플랜카드 스타일 */
+.intro-banner {
+    background-color: #ffe0d6;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
