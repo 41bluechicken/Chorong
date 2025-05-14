@@ -29,7 +29,7 @@ h1 {
     font-size: 18px;
     cursor: pointer;
     transition: 0.3s;
-    margin: 10px auto; /* 버튼 간격 및 수직 중앙 */
+    margin: 5px auto; /* 버튼 간격 및 수직 중앙 */
     text-align: center;
 }
 .pretty-button:hover {
