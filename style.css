@@ -25,7 +25,7 @@ h1 {
     color: #ff7043;
     border: 1.5px solid #ff7043;
     border-radius: 10px;
-    padding: 6px 20px; /* 간격 줄이기 */
+    padding: 12px 20px; /* 간격 줄이기 */
     font-size: 24px;
     font-family: 'Jua', sans-serif; /* 폰트 통일 */
     font-weight: normal; /* 굵기 통일 */
@@ -34,6 +34,7 @@ h1 {
     margin: 5px auto; /* 가운데 정렬 + 간격 */
     text-align: center;
     text-decoration: none; /* 밑줄 제거 */
+    line-height: 30px; /* 글씨 수직 정렬 */
 }
 .pretty-button:hover {
     background-color: #ffe0d6;
