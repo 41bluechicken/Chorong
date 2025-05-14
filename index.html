@@ -17,7 +17,7 @@
   <p>초롱이는 따뜻한 마음을 가진 사랑스러운 아이예요.🧡</p>
 </div>
    <div class="button-group">
-       <button class="pretty-button" onclick="toggleButton(this); toggleText('text-box1')">초롱이 구조 전</button>
+       <button class="pretty-button" onclick="toggleButton(this, '초롱이 구조 전'); toggleText('text-box1')"> 초롱이 구조 전 ▼</button>
         <!-- 접혔다 펼쳐질 글 -->
         <div id="text-box1" class="hidden-text">
             <p>초롱이는 구조되기 전, 길거리에서 혼자 지내며 많은 어려움을 겪었어요. 🥲</p>
@@ -25,8 +25,7 @@
     </div>
 
     <div class="button-group">
-       <button class="pretty-button" onclick="toggleButton(this); toggleText('text-box2')">초롱이 구조 후</button>
-
+       <button class="pretty-button" onclick="toggleButton(this, '초롱이 구조 후'); toggleText('text-box2')"> 초롱이 구조 후 ▼ </button>
         <!-- 접혔다 펼쳐질 글 -->
         <div id="text-box2" class="hidden-text">
             <p>초롱이는 구조되기 전, 길거리에서 혼자 지내며 많은 어려움을 겪었어요. 🥲</p>
@@ -53,14 +52,6 @@
             const content = document.getElementById(id);
             content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
         }
-        function toggleButton(button) {
-        button.classList.toggle('open');
-        if (button.classList.contains('open')) {
-            button.textContent = '접기';
-        } else {
-            button.textContent = '펼쳐보기';
-        }
-    }
     </script>
 </body>
 </html>
