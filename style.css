@@ -1,4 +1,7 @@
 /* style.css */
+body {
+    padding-top: 20px; /* 화면을 위로 올리기 */
+}
 h1 {
     font-family: 'Jua', sans-serif;
     font-size: 4.8rem; /* 기존보다 약 1.7배 크게 */
@@ -37,7 +40,7 @@ h1 {
 
 img {
     display: block;
-    margin: 0 auto 20px; /* 아래쪽에 20px 여백 추가 */
+    margin: 0 auto 10px; /* 아래쪽에 20px 여백 추가 */
 }
 /* 초롱이 플랜카드 스타일 */
 .intro-banner {
