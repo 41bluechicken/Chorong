@@ -19,8 +19,8 @@ h1 {
 }
 /* 버튼 간 간격 줄이기 */
 .pretty-button {
-    display: inline-block; /* 블록 대신 인라인 블록으로 바꿔서 너비 문제 해결 */
-    width: auto; /* 버튼 내용에 맞게 너비 설정 */
+    display: block;              /* 줄바꿈 강제 → 한 줄에 하나씩 */
+    width: fit-content;          /* 내용 크기만큼만 너비 설정 (또는 원하는 고정 너비도 가능) */
     background-color: #fff5f0;
     color: #ff7043;
     border: 1.5px solid #ff7043;
@@ -29,7 +29,7 @@ h1 {
     font-size: 18px;
     cursor: pointer;
     transition: 0.3s;
-    margin: 5px auto; /* 버튼 간격 및 수직 중앙 */
+    margin: 5px auto;            /* 위아래 5px 간격, 좌우는 auto로 중앙 정렬 */
     text-align: center;
 }
 .pretty-button:hover {
