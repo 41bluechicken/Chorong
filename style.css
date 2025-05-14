@@ -49,7 +49,6 @@ h1 {
     flex-direction: column;
     justify-content: flex-start; /* 세로로 정렬하고, 위로 붙임 */
 }
-}
 .center-container h1 {
     margin-bottom: 3px;
 }
