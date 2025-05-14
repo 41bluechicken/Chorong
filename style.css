@@ -26,9 +26,9 @@ h1 {
     border: 1.5px solid #ff7043;
     border-radius: 10px;
     padding: 10px 30px;
-    font-size: 18px;
+    font-size: 24px;
     font-family: 'Jua', sans-serif; /* 폰트 통일 */
-    font-weight: bold;              /* 굵기 통일 */
+    font-weight: normal;              /* 굵기 통일 */
     cursor: pointer;
     transition: 0.3s;
     margin: 5px auto;
