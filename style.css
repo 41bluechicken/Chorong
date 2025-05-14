@@ -1,8 +1,8 @@
 /* style.css */
 h1 {
-    font-family: 'Segoe UI', 'Arial Rounded MT Bold', 'Helvetica Rounded', sans-serif;
-    font-size: 2.72rem; /* 기본 1.6rem 정도일 때 x1.7 */
-    font-weight: 800;
+    font-family: 'Jua', sans-serif;
+    font-size: 2.72rem; /* 기존보다 약 1.7배 크게 */
+    font-weight: normal; /* Jua는 자체적으로 굵음 */
     color: #ff7043;
     margin-bottom: 20px;
 }
