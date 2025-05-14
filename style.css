@@ -36,15 +36,16 @@ h1 {
     font-size: 16px;
     color: #333;
 }
-/* center-container의 위쪽 여백을 줄여서 화면을 위로 올리기 */
+/* .center-container에도 height를 100% 적용 */
 .center-container {
+    height: 100%; /* 부모의 100%를 차지하도록 설정 */
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
-    padding: 5px 20px; /* 위쪽 여백을 줄여서 화면을 위로 올릴 수 있음 */
+    padding: 5px 20px;
 }
 .center-container h1 {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 img {
     display: block;
