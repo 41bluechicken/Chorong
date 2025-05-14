@@ -37,7 +37,9 @@ h1 {
     margin: 0 auto;
     padding: 5px 20px; /* 위 여백을 줄이기 위해 padding-top만 줄이기 */
 }
-
+.center-container h1 {
+    margin-bottom: 5px;
+}
 img {
     display: block;
     margin: 0 auto 10px; /* 아래쪽에 20px 여백 추가 */
