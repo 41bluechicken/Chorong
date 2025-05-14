@@ -53,6 +53,14 @@
             const content = document.getElementById(id);
             content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
         }
+        function toggleButton(button) {
+        button.classList.toggle('open');
+        if (button.classList.contains('open')) {
+            button.textContent = '접기';
+        } else {
+            button.textContent = '펼쳐보기';
+        }
+    }
     </script>
 </body>
 </html>
