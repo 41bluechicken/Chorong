@@ -68,7 +68,7 @@ img {
     background-color: #fff5f0;
     border-radius: 15px;
     padding: 20px;
-    margin: 20px auto; /* 위아래 간격 20px, 좌우 자동 */
+    margin: 10px auto; /* 위아래 간격 10px, 좌우 자동 */
     max-width: 500px;
     text-align: center;
     font-size: 16px;
