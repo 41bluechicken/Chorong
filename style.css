@@ -1,15 +1,4 @@
 /* style.css */
-.center-container {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-img {
-    display: block;
-    margin: 0 auto;
-}
 .pretty-button {
     background-color: #fff5f0;
     color: #ff7043;
@@ -30,4 +19,15 @@ img {
     margin-top: 15px;
     font-size: 16px;
     color: #333;
+}
+.center-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
 }
