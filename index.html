@@ -52,6 +52,14 @@
             const content = document.getElementById(id);
             content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
         }
+        function toggleButton(button, label) {
+      button.classList.toggle('open');
+      if (button.classList.contains('open')) {
+          button.textContent = label + ' ▲';
+      } else {
+          button.textContent = label + ' ▼';
+      }
+  }
     </script>
 </body>
 </html>
