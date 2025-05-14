@@ -8,12 +8,13 @@ html, body {
 body {
     padding-top: 0; /* 위쪽 여백 없애기 */
 }
+/* h1 스타일 */
 h1 {
     font-family: 'Jua', sans-serif;
     font-size: 4.8rem; /* 기존보다 약 1.7배 크게 */
     font-weight: bold; /* Jua는 자체적으로 굵음 */
     color: #ff7043;
-    margin-bottom: 5px;
+    margin-bottom: 3px; /* 상하 간격 좁힘 */
 }
 /* 버튼 간 간격 줄이기 */
 .pretty-button {
@@ -43,6 +44,11 @@ h1 {
     max-width: 800px;
     margin: 0 auto;
     padding: 5px 20px;
+    /* Flexbox를 사용하여 화면의 위로 콘텐츠를 올림 */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 세로로 정렬하고, 위로 붙임 */
+}
 }
 .center-container h1 {
     margin-bottom: 3px;
