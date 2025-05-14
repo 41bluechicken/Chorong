@@ -1,4 +1,11 @@
 /* style.css */
+h1 {
+    font-family: 'Segoe UI', 'Arial Rounded MT Bold', 'Helvetica Rounded', sans-serif;
+    font-size: 2.72rem; /* 기본 1.6rem 정도일 때 x1.7 */
+    font-weight: 800;
+    color: #ff7043;
+    margin-bottom: 20px;
+}
 .pretty-button {
     background-color: #fff5f0;
     color: #ff7043;
