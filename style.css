@@ -89,3 +89,22 @@ img {
     color: #333;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.image-slider {
+    max-width: 320px;
+    margin: 0 auto 15px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.image-slider img {
+    width: 100%;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.image-slider img.active {
+    display: block;
+}
