@@ -69,35 +69,53 @@
     </div>
     <!-- 자바스크립트 기능 -->
     <script>
-        function toggleText(id) {
-            const content = document.getElementById(id);
-            content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+    function toggleText(id) {
+        const content = document.getElementById(id);
+        content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+    }
+
+    function toggleButton(button, label) {
+        button.classList.toggle('open');
+        if (button.classList.contains('open')) {
+            button.textContent = label + ' ^';
+        } else {
+            button.textContent = label + ' v';
         }
-        function toggleButton(button, label) {
-      button.classList.toggle('open');
-      if (button.classList.contains('open')) {
-          button.textContent = label + ' ^';
-      } else {
-          button.textContent = label + ' v';
-      }
-  }
+    }
+
+    // 슬라이더 동작 코드
+    document.addEventListener('DOMContentLoaded', () => {
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.image-slider .slide');
         const dots = document.querySelectorAll('.dot');
 
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        if (i === index) slide.classList.add('active');
-    });
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) slide.classList.add('active');
+            });
 
-    dots.forEach((dot, i) => {
-        dot.classList.remove('active');
-        if (i === index) dot.classList.add('active');
+            dots.forEach((dot, i) => {
+                dot.classList.remove('active');
+                if (i === index) dot.classList.add('active');
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        window.goToSlide = function(index) {
+            currentSlide = index;
+            showSlide(currentSlide);
+        };
+
+        if (slides.length > 0) {
+            showSlide(currentSlide);
+            setInterval(nextSlide, 3000); // 3초마다 자동 전환
+        }
     });
-}
-function goToSlide(index) {
-    currentSlide = index;
-    showSlide(currentSlide);
-}
-    </script>
+</script>
 </body>
 </html>
