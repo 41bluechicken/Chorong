@@ -97,14 +97,30 @@ img {
     border-radius: 10px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.15);
 }
-
 .image-slider img {
     width: 100%;
     display: none;
     transition: opacity 0.5s ease-in-out;
     border-radius: 10px;
 }
-
 .image-slider img.active {
     display: block;
+}
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 6px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #ff7043;
 }
