@@ -1,4 +1,4 @@
-/* style.css */
+/* style.css */
 /* html, body에 대한 스타일 추가 */
 html, body {
     height: 100%; /* 전체 화면 높이를 채우도록 설정 */
@@ -97,10 +97,14 @@ img {
     border-radius: 10px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.15);
 }
+.image-slider {
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
 .image-slider img {
     width: 100%;
     display: none;
-    transition: opacity 0.5s ease-in-out;
     border-radius: 10px;
 }
 .image-slider img.active {
@@ -111,16 +115,15 @@ img {
     margin-top: 10px;
 }
 .dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 0 6px;
-    background-color: #ccc;
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;
     border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
-
 .dot.active {
     background-color: #ff7043;
 }
