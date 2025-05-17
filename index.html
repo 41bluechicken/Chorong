@@ -11,10 +11,10 @@
 <body style= "background-color: #ffe0d6;"> 
     <div class="center-container">
     <h1>초롱이</h1>
-    <img src="Chorong image.jpeg" alt="강아지 사진" width="220" height="250">
+    <img src="chorong_main_image.jpg" alt="강아지 사진" width="220" height="250">
         <!-- 플랜카드 소개 박스 -->
 <div class="intro-banner">
-  <p>초롱이는 따뜻한 마음을 가진 사랑스러운 아이예요.🧡</p>
+  <p>초롱이는 배려심이 넘치는, 발랄한 한 살 강아지예요.🧡</p>
 </div>
    <div class="button-group">
        <button class="pretty-button" onclick="toggleButton(this, '초롱이 구조 전'); toggleText('text-box1')">초롱이 구조 전 v</button>
@@ -48,6 +48,19 @@
        <button class="pretty-button" onclick="toggleButton(this, '초롱이 구조 후'); toggleText('text-box2')">초롱이 구조 후 v</button>
         <!-- 접혔다 펼쳐질 글 -->
         <div id="text-box2" class="hidden-text">
+    <!-- 🔹 슬라이드 이미지 영역 -->
+    <div class="image-slider after-slider">
+        <img class="slide2 active" src="chorong_after_rescue_01.jpg" alt="초롱이 구조 후 1">
+        <img class="slide2" src="chorong_after_rescue_02.jpg" alt="초롱이 구조 후 2">
+        <img class="slide2" src="chorong_after_rescue_03.jpg" alt="초롱이 구조 후 3">
+
+        <!-- 🔹 페이징 점 -->
+        <div class="dots2">
+            <span class="dot2 active" onclick="goToSlide2(0)"></span>
+            <span class="dot2" onclick="goToSlide2(1)"></span>
+            <span class="dot2" onclick="goToSlide2(2)"></span>
+        </div>
+    </div>
             <p>현재 초롱이는 저희 보호소에서 친구들과 어울리며 간식도 맛있게 먹고, 즐겁게 지내고 있습니다.
                 하지만 요즘 들어 보호소 생활이 초롱이에게 조금은 벅차게 느껴지는 듯합니다.
                 여러 친구들과 사랑을 나누기보다는, 이제는 한 가정에서 오롯이 자신만을 향한 사랑을 받고 싶어하는 모습이 보입니다.</p>
@@ -115,6 +128,39 @@
         if (slides.length > 0) {
             showSlide(currentSlide);
             setInterval(nextSlide, 3000); // 3초마다 자동 전환
+        }
+    });
+          // 구조 후 슬라이더 동작 코드
+    document.addEventListener('DOMContentLoaded', () => {
+        let currentSlide2 = 0;
+        const slides2 = document.querySelectorAll('.after-slider .slide2');
+        const dots2 = document.querySelectorAll('.dot2');
+
+        function showSlide2(index) {
+            slides2.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) slide.classList.add('active');
+            });
+
+            dots2.forEach((dot, i) => {
+                dot.classList.remove('active');
+                if (i === index) dot.classList.add('active');
+            });
+        }
+
+        function nextSlide2() {
+            currentSlide2 = (currentSlide2 + 1) % slides2.length;
+            showSlide2(currentSlide2);
+        }
+
+        window.goToSlide2 = function(index) {
+            currentSlide2 = index;
+            showSlide2(index);
+        };
+
+        if (slides2.length > 0) {
+            showSlide2(currentSlide2);
+            setInterval(nextSlide2, 3000); // 3초마다 자동 전환
         }
     });
 </script>
