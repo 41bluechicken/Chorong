@@ -127,3 +127,25 @@ img {
 .dot.active {
     background-color: #ff7043;
 }
+.slide2 {
+    display: none;
+    margin: 0 auto;
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+.slide2.active {
+    display: block;
+}
+.dot2 {
+    height: 14px;
+    width: 14px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+.dot2.active {
+    background-color: #ff7f50;
+}
